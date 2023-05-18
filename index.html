@@ -1,22 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/mainIconLarge.svg">
+  <link rel="stylesheet" href="bundle/bootstrap.min.css">
   <link rel="stylesheet" href="style/style.css">
   <link rel="stylesheet" href="style/fonts.css">
-  <link rel="stylesheet" href="bundle/bootstrap.min.css.map">
-  <title>Document</title>
+  <title>marketpace</title>
 </head>
+
 <body>
-  <h1>h1</h1>
-  <h2>h2</h2>
-  <h3>h3</h3>
-  <h4>h4</h4>
-  <h5>h5</h5>
-  <p>Hello World!</p>
-  <script src="js/main.js"></script>
   <script src="bundle/bootstrap.bundle.min.js"></script>
+  <script src="bundle/jquery-3.6.4.min.js"></script>
+  <script src="bundle/slick.min.js"></script>
+  <script src="js/script.js"></script>
+
+
+
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="img/mainIconLarge.svg" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse d-flex-md justify-content-between" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto mb-4 mb-md-0 align-items-center p-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Услуги</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Стоимость</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Клиенты</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Контакты</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav nav-phone mr-auto mb-5 mb-md-0 d-flex align-items-center ">
+          <li class="nav-item">
+            <p class="nav-link active m-0" aria-current="page" href="#">8 (999) 999-99-99</р>
+          </li>
+          <li class="nav-item">
+            <button class="nav-btn">Перезвоните мне</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <header class="header">
+    <div class="header__container container">
+      <div class="header__row row d-flex justify-content-between">
+        <div class="col-md-6 header__main">
+          <h1>Ваши продажи в надежных руках!</h1>
+          <p>Увеличим объемы продаж вашего товара на маркетплейсах за счет внутренней оптимизации и внешнего трафика</p>
+          <form action="#" class="d-flex">
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+            <input class="btn btn-primary" type="submit" value="Отправить">
+          </form>
+        </div>
+        <div class="col-md-6 header__other d-flex justify-content-end align-items-center">
+          <div class="header__slider slider">
+            <div class="card slider__item">
+              <div class="card-body">
+                <h6 class="card-subtitle mb-2 text-muted">Купили более 2500 раз</h6>
+                <div class="card-img header__card-img-item">
+                  <img src="img/soldItems/v1.png" alt="">
+                </div>
+                <div class="card-img header__card-img-star">
+                  <img src="img/otherIcons/stars.svg" class="mb-3" alt="">
+                </div>
+                <h6 class="card-subtitle mb-2 text-muted header__card-text">Увеличим продажи товаров вашей компании на всех маркетплейсах</h6>
+              </div>
+            </div>
+            <div class="card slider__item">
+              <div class="card-body">
+                <h6 class="card-subtitle mb-2 text-muted">Купили более 700 раз</h6>
+                <div class="card-img header__card-img-item">
+                  <img src="img/soldItems/v2.png" alt="">
+                </div>
+                <div class="card-img header__card-img-star">
+                  <img src="img/otherIcons/stars.svg" class="mb-3" alt="">
+                </div>
+                <h6 class="card-subtitle mb-2 text-muted header__card-text">Настроим внешний трафик на ваши товары</h6>
+              </div>
+            </div>
+            <div class="card slider__item">
+              <div class="card-body">
+                <h6 class="card-subtitle mb-2 text-muted">Купили более 550 раз</h6>
+                <div class="card-img header__card-img-item">
+                  <img src="img/soldItems/v3.png" alt="">
+                </div>
+                <div class="card-img header__card-img-star">
+                  <img src="img/otherIcons/stars.svg" class="mb-3" alt="">
+                </div>
+                <h6 class="card-subtitle mb-2 text-muted header__card-text">Поднимем позиции товаров в поисковой выдаче</h6>
+              </div>
+            </div>
+            <div class="card slider__item">
+              <div class="card-body">
+                <h6 class="card-subtitle mb-2 text-muted">Купили более 550 раз</h6>
+                <div class="card-img header__card-img-item">
+                  <img src="img/soldItems/v4.png" alt="">
+                </div>
+                <div class="card-img header__card-img-star">
+                  <img src="img/otherIcons/stars.svg" class="mb-3" alt="">
+                </div>
+                <h6 class="card-subtitle mb-2 text-muted header__card-text">Оформим продающие карточки товаров</h6>
+              </div>
+            </div>
+            <div class="card slider__item">
+              <div class="card-body">
+                <h6 class="card-subtitle mb-2 text-muted">Купили более 550 раз</h6>
+                <div class="card-img header__card-img-item">
+                  <img src="img/soldItems/v5.png" alt="">
+                </div>
+                <div class="card-img header__card-img-star">
+                  <img src="img/otherIcons/stars.svg" class="mb-3" alt="">
+                </div>
+                <h6 class="card-subtitle mb-2 text-muted header__card-text">Предложим оптимальное решение по увеличению оборота и прибыли</h6>
+              </div>
+            </div>
+            <div class="card slider__item">
+              <div class="card-body">
+                <h6 class="card-subtitle mb-2 text-muted">Купили более 280 раз</h6>
+                <div class="card-img header__card-img-item">
+                  <img src="img/soldItems/v6.png" alt="">
+                </div>
+                <div class="card-img header__card-img-star">
+                  <img src="img/otherIcons/stars.svg" class="mb-3" alt="">
+                </div>
+                <h6 class="card-subtitle mb-2 text-muted header__card-text">Подскажем, как лучше прорекламироваться на площадках</h6>
+              </div>
+            </div>
+            
+            
+          </div>
+          <div class="content"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+
+  <script src="js/main.js"></script>
 </body>
+
 </html>
