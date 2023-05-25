@@ -28,7 +28,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse d-flex-md justify-content-between" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto mb-4 mb-md-0 align-items-center p-3">
+        <ul class="navbar-nav flex-wrap mr-auto mb-4 mb-md-0 align-items-center p-lg-3">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Услуги</a>
           </li>
@@ -43,8 +43,12 @@
           </li>
         </ul>
         <ul class="navbar-nav nav-phone mr-auto mb-5 mb-md-0 d-flex align-items-center ">
+          <li class="nav-item nav-socialMedia flex-wrap">
+            <a href="#"><img src="./img/socialMedia/vk.svg" alt=""></a>
+            <a href="#"><img src="./img/socialMedia/insta.svg" alt=""></a>
+          </li>
           <li class="nav-item">
-            <p class="nav-link active m-0" aria-current="page" href="#">8 (999) 999-99-99</р>
+            <p class="m-3 nav-number">8 (999) 999-99-99</р>
           </li>
           <li class="nav-item">
             <button class="nav-btn">Перезвоните мне</button>
@@ -55,34 +59,52 @@
   </nav>
 
 
-  <header class="header">
+  <header class="header d-flex">
     <div class="header__container container">
-      <div class="header__row row d-flex justify-content-between">
-        <div class="col-md-6 header__main">
+      <div class="header__row row d-flex justify-content-xl-between justify-content-center">
+        <div class="col-md-6 header__main d-xl-block d-none">
           <h1>Ваши продажи в надежных руках!</h1>
           <p>Увеличим объемы продаж вашего товара на маркетплейсах за счет внутренней оптимизации и внешнего трафика</p>
-          <form action="#" class="d-flex">
-            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
-            <input class="btn btn-primary" type="submit" value="Отправить">
+          <form action="#" class="header__form">
+            <div class="d-flex header__formFlex">
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ваш email">
+              <button class="header__btn ">
+                <p>Оставить заявку</p>
+              </button>
+            </div>
+            <div class="form-check m-3 ">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label text-secondary" for="flexCheckDefault">
+                Оставьте заявку и узнайте, как за счет внешнего трафика увеличить продажи на маркетплейсах минимум в 2
+                раза. Но сначала согласитесь с нашей политикой конфиденциальности
+              </label>
+            </div>
           </form>
         </div>
-        <div class="col-md-6 header__other d-flex justify-content-end align-items-center">
-          <div class="header__slider slider">
+        <div class="col-md-6 header__other d-flex justify-content-start flex-column align-items-center text-center">
+          <div class="d-xl-none ">
+            <h1 class="d-sm-block d-none">Ваши продажи в надежных руках!</h1>
+            <p class="mt-sm-0 mt-3 pb-sm-5 p-0">Увеличим объемы продаж вашего товара на маркетплейсах за счет внутренней оптимизации и внешнего трафика
+            </p>
+          </div>
+
+          <div class="header__slider slider text-start">
             <div class="card slider__item">
               <div class="card-body">
-                <h6 class="card-subtitle mb-2 text-muted">Купили более 2500 раз</h6>
+                <h6 class="card-subtitle card-buy mb-2 text-muted">Купили более 2500 раз</h6>
                 <div class="card-img header__card-img-item">
                   <img src="img/soldItems/v1.png" alt="">
                 </div>
                 <div class="card-img header__card-img-star">
                   <img src="img/otherIcons/stars.svg" class="mb-3" alt="">
                 </div>
-                <h6 class="card-subtitle mb-2 text-muted header__card-text">Увеличим продажи товаров вашей компании на всех маркетплейсах</h6>
+                <h6 class="card-subtitle mb-2 text-muted header__card-text">Увеличим продажи товаров вашей компании на
+                  всех маркетплейсах</h6>
               </div>
             </div>
             <div class="card slider__item">
               <div class="card-body">
-                <h6 class="card-subtitle mb-2 text-muted">Купили более 700 раз</h6>
+                <h6 class="card-subtitle card-buy mb-2 text-muted">Купили более 700 раз</h6>
                 <div class="card-img header__card-img-item">
                   <img src="img/soldItems/v2.png" alt="">
                 </div>
@@ -94,19 +116,20 @@
             </div>
             <div class="card slider__item">
               <div class="card-body">
-                <h6 class="card-subtitle mb-2 text-muted">Купили более 550 раз</h6>
+                <h6 class="card-subtitle card-buy mb-2 text-muted">Купили более 550 раз</h6>
                 <div class="card-img header__card-img-item">
                   <img src="img/soldItems/v3.png" alt="">
                 </div>
                 <div class="card-img header__card-img-star">
                   <img src="img/otherIcons/stars.svg" class="mb-3" alt="">
                 </div>
-                <h6 class="card-subtitle mb-2 text-muted header__card-text">Поднимем позиции товаров в поисковой выдаче</h6>
+                <h6 class="card-subtitle mb-2 text-muted header__card-text">Поднимем позиции товаров в поисковой выдаче
+                </h6>
               </div>
             </div>
             <div class="card slider__item">
               <div class="card-body">
-                <h6 class="card-subtitle mb-2 text-muted">Купили более 550 раз</h6>
+                <h6 class="card-subtitle card-buy mb-2 text-muted">Купили более 550 раз</h6>
                 <div class="card-img header__card-img-item">
                   <img src="img/soldItems/v4.png" alt="">
                 </div>
@@ -118,32 +141,47 @@
             </div>
             <div class="card slider__item">
               <div class="card-body">
-                <h6 class="card-subtitle mb-2 text-muted">Купили более 550 раз</h6>
+                <h6 class="card-subtitle card-buy mb-2 text-muted">Купили более 550 раз</h6>
                 <div class="card-img header__card-img-item">
                   <img src="img/soldItems/v5.png" alt="">
                 </div>
                 <div class="card-img header__card-img-star">
                   <img src="img/otherIcons/stars.svg" class="mb-3" alt="">
                 </div>
-                <h6 class="card-subtitle mb-2 text-muted header__card-text">Предложим оптимальное решение по увеличению оборота и прибыли</h6>
+                <h6 class="card-subtitle mb-2 text-muted header__card-text">Предложим оптимальное решение по увеличению
+                  оборота и прибыли</h6>
               </div>
             </div>
             <div class="card slider__item">
               <div class="card-body">
-                <h6 class="card-subtitle mb-2 text-muted">Купили более 280 раз</h6>
+                <h6 class="card-subtitle card-buy mb-2 text-muted">Купили более 280 раз</h6>
                 <div class="card-img header__card-img-item">
                   <img src="img/soldItems/v6.png" alt="">
                 </div>
                 <div class="card-img header__card-img-star">
                   <img src="img/otherIcons/stars.svg" class="mb-3" alt="">
                 </div>
-                <h6 class="card-subtitle mb-2 text-muted header__card-text">Подскажем, как лучше прорекламироваться на площадках</h6>
+                <h6 class="card-subtitle mb-2 text-muted header__card-text">Подскажем, как лучше прорекламироваться на
+                  площадках</h6>
               </div>
             </div>
-            
-            
           </div>
-          <div class="content"></div>
+          <div class="content mb-4 d-xl-flex d-none"></div>
+          <form action="#" class="header__form d-xl-none">
+            <div class="d-flex header__formFlex">
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ваш email">
+              <button class="header__btn ">
+                <p>Оставить заявку</p>
+              </button>
+            </div>
+            <div class="form-check m-3 ">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label text-secondary" for="flexCheckDefault">
+                Оставьте заявку и узнайте, как за счет внешнего трафика увеличить продажи на маркетплейсах минимум в 2
+                раза. Но сначала согласитесь с нашей политикой конфиденциальности
+              </label>
+            </div>
+          </form>
         </div>
       </div>
     </div>
