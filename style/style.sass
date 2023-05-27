@@ -2,6 +2,9 @@
 .row
   padding: 40px
 
+.container
+  max-width: 2000px
+
 h1
   font-weight: 800
   font-size: 45px
@@ -10,6 +13,13 @@ h1
   background-image: linear-gradient(270deg, #C5436B 4.87%, #AA24AC 47%, #0689FF 100%)
   -webkit-background-clip: text
   -webkit-text-fill-color: transparent
+
+h2
+  font-weight: 800
+  font-size: 40px
+  line-height: 47px
+  padding: 40px 0
+  color: #313131
 
 p
   font-weight: 400
@@ -87,10 +97,9 @@ p
 .header
   background: rgba(188, 102, 160, 0.15)
   .header__container
-    max-width: 2000px
-    margin: auto
     .header__row
       padding-right: 0
+      padding-bottom: 120px !important
       .header__main
         max-width: 560px
         min-width: 300px
@@ -149,6 +158,33 @@ p
             font-weight: 400
             font-size: 1em
 
+.clients
+  .clients__blocks
+    padding: 40px 0
+    .clients__blockActive
+      background: linear-gradient(90.15deg, #7AC8FF 0.11%, #547BED 50.02%, #FF719D 99.85%)
+    .clients__block
+      min-height: 190px
+      min-width: 200px
+      max-width: 350px !important
+      display: flex
+      justify-content: center
+      align-items: center
+      border-radius: 30px
+      box-shadow: -0.471052px 0.471052px 7px rgba(102, 76, 117, 0.3)
+      .clients__blockInfo
+        width: 97%
+        min-height: 180px
+        display: flex
+        flex-direction: column
+        justify-content: center !important
+        align-items: center
+        border-radius: 26px
+        background-color: #fff
+        p
+          font-weight: 500
+          font-size: 18px 
+
 @media screen and (max-width:768px)
   p
     font-size: 15px
@@ -202,9 +238,9 @@ p
     width: 100% !important
 
 @media screen and (max-width:450px)
+  .row
+    padding: 0
   .header
-    .header__row
-      padding: 0
     .header__formFlex
       .form-control
         font-size: 13px !important

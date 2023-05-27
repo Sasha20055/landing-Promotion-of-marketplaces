@@ -2,6 +2,10 @@
   padding: 40px;
 }
 
+.container {
+  max-width: 2000px;
+}
+
 h1 {
   font-weight: 800;
   font-size: 45px;
@@ -11,6 +15,14 @@ h1 {
   background-image: linear-gradient(270deg, #C5436B 4.87%, #AA24AC 47%, #0689FF 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+h2 {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 47px;
+  padding: 40px 0;
+  color: #313131;
 }
 
 p {
@@ -132,13 +144,9 @@ p {
   background: rgba(188, 102, 160, 0.15);
 }
 
-.header .header__container {
-  max-width: 2000px;
-  margin: auto;
-}
-
 .header .header__container .header__row {
   padding-right: 0;
+  padding-bottom: 120px !important;
 }
 
 .header .header__container .header__row .header__main {
@@ -227,6 +235,57 @@ p {
   font-size: 1em;
 }
 
+.clients .clients__blocks {
+  padding: 40px 0;
+}
+
+.clients .clients__blocks .clients__blockActive {
+  background: linear-gradient(90.15deg, #7AC8FF 0.11%, #547BED 50.02%, #FF719D 99.85%);
+}
+
+.clients .clients__blocks .clients__block {
+  min-height: 190px;
+  min-width: 200px;
+  max-width: 350px !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 30px;
+  -webkit-box-shadow: -0.47105px 0.47105px 7px rgba(102, 76, 117, 0.3);
+          box-shadow: -0.47105px 0.47105px 7px rgba(102, 76, 117, 0.3);
+}
+
+.clients .clients__blocks .clients__block .clients__blockInfo {
+  width: 97%;
+  min-height: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 26px;
+  background-color: #fff;
+}
+
+.clients .clients__blocks .clients__block .clients__blockInfo p {
+  font-weight: 500;
+  font-size: 18px;
+}
+
 @media screen and (max-width: 768px) {
   p {
     font-size: 15px;
@@ -295,7 +354,7 @@ p {
 }
 
 @media screen and (max-width: 450px) {
-  .header .header__row {
+  .row {
     padding: 0;
   }
   .header .header__formFlex .form-control {
