@@ -6,6 +6,18 @@
   max-width: 2000px;
 }
 
+.center {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+}
+
 h1 {
   font-weight: 800;
   font-size: 45px;
@@ -44,12 +56,12 @@ p {
   width: 550px;
 }
 
-.slider .slick-list {
+.slick-list {
   overflow: hidden;
   padding: 0 35% 0 2%;
 }
 
-.slider .slick-list .slick-track {
+.slick-track {
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
   display: -webkit-box;
@@ -63,7 +75,7 @@ p {
           align-items: center;
 }
 
-.slider .slick-list .slick-track .slick-slide {
+.slick-slide {
   position: relative;
   width: 320px;
   height: 370px;
@@ -72,7 +84,7 @@ p {
           transition-duration: 0.5s;
 }
 
-.slider .slick-list .slick-track .slick-active {
+.slick-active {
   -webkit-transform: translate(0, -15px);
           transform: translate(0, -15px);
   -webkit-transition-duration: 1.5s;
@@ -86,7 +98,7 @@ p {
   gap: 50px;
 }
 
-.content .slick-next {
+.slick-next {
   background: url(../img/otherIcons/Arrow.svg) 0 0 no-repeat;
   padding: 5px 10px;
   font-size: 0px;
@@ -94,7 +106,7 @@ p {
   position: relative;
 }
 
-.content .slick-prev {
+.slick-prev {
   background: url(../img/otherIcons/Arrow.svg) 0 0 no-repeat;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
@@ -109,28 +121,28 @@ p {
   background-color: #F5E8F1 !important;
 }
 
-.navbar .container-fluid {
+.container-fluid {
   max-width: 2000px !important;
 }
 
-.navbar .container-fluid .nav-phone {
+.nav-phone {
   line-height: 16px;
   text-align: center;
 }
 
-.navbar .container-fluid .nav-phone .nav-socialMedia {
+.nav-socialMedia {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 15px;
 }
 
-.navbar .container-fluid .nav-phone .nav-number {
+.nav-number {
   font-size: 14px;
   font-weight: 700;
 }
 
-.navbar .container-fluid .nav-phone .nav-btn {
+.nav-btn {
   width: 135px;
   height: 35px;
   background-color: #F5E8F1;
@@ -144,50 +156,50 @@ p {
   background: rgba(188, 102, 160, 0.15);
 }
 
-.header .header__container .header__row {
+.header__row {
   padding-right: 0;
   padding-bottom: 120px !important;
 }
 
-.header .header__container .header__row .header__main {
-  max-width: 560px;
-  min-width: 300px;
-}
-
-.header .header__container .header__row h1 {
+.header__row h1 {
   padding: 40px 0;
   margin: 0;
 }
 
-.header .header__container .header__row p {
+.header__row p {
   padding: 0 0 60px 0;
   margin: 0;
 }
 
-.header .header__container .header__row .header__form {
+.header__main {
+  max-width: 560px;
+  min-width: 300px;
+}
+
+.header__form {
   width: 520px;
 }
 
-.header .header__container .header__row .header__form .header__formFlex {
+.header__formFlex {
   height: 55px;
   border: 2px solid #7879F1;
   border-radius: 25px;
 }
 
-.header .header__container .header__row .header__form .header__formFlex input {
+.header__formFlex input {
   width: 60%;
   border-radius: 23px 0 0 23px;
   border: 0;
 }
 
-.header .header__container .header__row .header__form .header__formFlex button {
+.header__formFlex button {
   width: 40%;
   border-radius: 0 22px 22px 0;
   background: #7879F1;
   border: 0;
 }
 
-.header .header__container .header__row .header__form .header__formFlex button p {
+.header__formFlex button p {
   position: relative;
   bottom: 4px;
   color: white;
@@ -196,11 +208,11 @@ p {
   line-height: 55px;
 }
 
-.header .header__container .header__row .header__other {
+.header__other {
   width: 560px;
 }
 
-.header .header__container .header__row .header__other .card {
+.card {
   width: 320px;
   border-radius: 25px;
   border: 0;
@@ -208,42 +220,42 @@ p {
           box-shadow: -1.57556px 4.20149px 15px rgba(0, 0, 0, 0.15);
 }
 
-.header .header__container .header__row .header__other .card-body {
+.card-body {
   padding: 20px 40px;
   width: 320px;
 }
 
-.header .header__container .header__row .header__other .card-body .card-buy {
+.card-buy {
   font-weight: 400;
   font-size: 0.8em;
   opacity: 40%;
 }
 
-.header .header__container .header__row .header__other .card-body .header__card-img-item img {
+.header__card-img-item img {
   width: 240px;
 }
 
-.header .header__container .header__row .header__other .card-body .header__card-img-star {
+.header__card-img-star {
   position: relative;
   bottom: 30px;
 }
 
-.header .header__container .header__row .header__other .card-body .header__card-text {
+.header__card-text {
   position: relative;
   bottom: 30px;
   font-weight: 400;
   font-size: 1em;
 }
 
-.clients .clients__blocks {
+.clients__blocks {
   padding: 40px 0;
 }
 
-.clients .clients__blocks .clients__blockActive {
+.clients__blockActive {
   background: linear-gradient(90.15deg, #7AC8FF 0.11%, #547BED 50.02%, #FF719D 99.85%);
 }
 
-.clients .clients__blocks .clients__block {
+.clients__block {
   min-height: 190px;
   min-width: 200px;
   max-width: 350px !important;
@@ -261,7 +273,7 @@ p {
           box-shadow: -0.47105px 0.47105px 7px rgba(102, 76, 117, 0.3);
 }
 
-.clients .clients__blocks .clients__block .clients__blockInfo {
+.clients__blockInfo {
   width: 97%;
   min-height: 180px;
   display: -webkit-box;
@@ -281,9 +293,46 @@ p {
   background-color: #fff;
 }
 
-.clients .clients__blocks .clients__block .clients__blockInfo p {
+.clients__blockInfo p {
   font-weight: 500;
   font-size: 18px;
+}
+
+.services {
+  background: #FBFAFE;
+}
+
+.services__blocks {
+  max-width: 1400px;
+  gap: 70px;
+}
+
+.services__block {
+  width: 300px;
+  min-height: 150px;
+  -webkit-box-shadow: -0.47105px 0.47105px 7px rgba(102, 76, 117, 0.3);
+          box-shadow: -0.47105px 0.47105px 7px rgba(102, 76, 117, 0.3);
+  border: 2px solid #6E679C;
+  border-radius: 30px;
+  background-color: #17022D;
+}
+
+.services__block p {
+  text-align: start;
+  margin-right: 0 !important;
+  max-width: 160px;
+  color: white;
+  margin: 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.services__blockActive {
+  background-color: white;
+}
+
+.services__blockActive p {
+  color: black;
 }
 
 @media screen and (max-width: 768px) {
@@ -293,15 +342,18 @@ p {
   h6 {
     font-size: 11px;
   }
-  .navbar .navbar-brand img {
+  .navbar-brand img {
     width: 63px;
     height: 38px;
   }
 }
 
 @media screen and (max-width: 1200px) {
-  .header .header__other {
-    width: 100% !important;
+  .services__blocks {
+    gap: 10px;
+  }
+  .header__other {
+    width: 100%;
   }
 }
 
@@ -310,46 +362,46 @@ p {
     display: none;
   }
   .slider {
-    height: 350px !important;
-    width: 350px !important;
+    height: 350px;
+    width: 350px;
   }
   .slick-list {
-    padding: 0 30% 0 2% !important;
+    padding: 0 30% 0 2%;
   }
-  .slick-list .slick-track {
+  .slick-track {
     overflow: hidden;
-    height: 400px !important;
-    gap: 20px !important;
+    height: 400px;
+    gap: 20px;
   }
-  .slick-list .slick-track .slick-slide {
+  .slick-slide {
     position: relative;
-    width: 240px !important;
-    height: 220px !important;
+    width: 240px;
+    height: 220px;
   }
   .card {
     font-size: 11px;
-    width: 200px !important;
+    width: 200px;
   }
   .card-body {
-    width: 240px !important;
-    height: 220px !important;
+    width: 240px;
+    height: 220px;
     text-align: center;
   }
-  .card-body .card-buy {
+  .card-buy {
     text-align: start;
   }
-  .card-body .header__card-img-item img {
-    width: 100px !important;
+  .header__card-img-item img {
+    width: 100px;
   }
-  .card-body .header__card-img-star {
+  .header__card-img-star {
     top: 0;
   }
-  .card-body .header__card-text {
+  .header__card-text {
     top: 0;
     text-align: start;
   }
   .header__form {
-    width: 100% !important;
+    width: 100%;
   }
 }
 
@@ -357,14 +409,14 @@ p {
   .row {
     padding: 0;
   }
-  .header .header__formFlex .form-control {
-    font-size: 13px !important;
+  .form-control {
+    font-size: 13px;
   }
-  .header .header__formFlex .header__btn p {
-    font-size: 10px !important;
+  .header__btn p {
+    font-size: 10px;
   }
-  .header .form-check-label {
-    font-size: 10px !important;
+  .form-check-label {
+    font-size: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */

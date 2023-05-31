@@ -5,6 +5,11 @@
 .container
   max-width: 2000px
 
+.center
+  display: flex !important
+  justify-content: center !important
+  align-items: center !important
+
 h1
   font-weight: 800
   font-size: 45px
@@ -33,157 +38,187 @@ p
   align-items: center
   height: 450px
   width: 550px
-  .slick-list
-    overflow: hidden
-    padding: 0 35% 0 2%
-    .slick-track
-      transition-duration: 0.5s
-      display: flex
-      gap: 50px
-      overflow: hidden
-      height: 550px
-      align-items: center
-      .slick-slide
-        position: relative
-        width: 320px
-        height: 370px
-        border-radius: 25px
-        transition-duration: 0.5s
+.slick-list
+  overflow: hidden
+  padding: 0 35% 0 2%
+.slick-track
+  transition-duration: 0.5s
+  display: flex
+  gap: 50px
+  overflow: hidden
+  height: 550px
+  align-items: center
+.slick-slide
+  position: relative
+  width: 320px
+  height: 370px
+  border-radius: 25px
+  transition-duration: 0.5s
 
-      .slick-active
-        transform: translate(0, -15px)
-        transition-duration: 1.5s
+.slick-active
+  transform: translate(0, -15px)
+  transition-duration: 1.5s
 
 .content
   display: flex
   gap: 50px
-  .slick-next
-    background: url(../img/otherIcons/Arrow.svg) 0 0 no-repeat
-    padding: 5px 10px
-    font-size: 0px
-    border: 0
-    position: relative
-  .slick-prev
-    background: url(../img/otherIcons/Arrow.svg) 0 0 no-repeat
-    transform: rotate(180deg)
-    padding: 5px 10px
-    font-size: 0px
-    border: 0
-    position: relative
+.slick-next
+  background: url(../img/otherIcons/Arrow.svg) 0 0 no-repeat
+  padding: 5px 10px
+  font-size: 0px
+  border: 0
+  position: relative
+.slick-prev
+  background: url(../img/otherIcons/Arrow.svg) 0 0 no-repeat
+  transform: rotate(180deg)
+  padding: 5px 10px
+  font-size: 0px
+  border: 0
+  position: relative
 
 .navbar
   padding: 0 !important
   background-color: #F5E8F1 !important
-  .container-fluid
-    max-width: 2000px !important
-    .nav-phone
-      line-height: 16px
-      text-align: center
-      .nav-socialMedia
-        display: flex
-        gap: 15px
-      .nav-number
-        font-size: 14px
-        font-weight: 700
-      .nav-btn
-        width: 135px
-        height: 35px
-        background-color: #F5E8F1
-        border: 2px solid #7148CA
-        border-radius: 30px
-        font-size: 12px
-        font-weight: 700
+.container-fluid
+  max-width: 2000px !important
+.nav-phone
+  line-height: 16px
+  text-align: center
+.nav-socialMedia
+  display: flex
+  gap: 15px
+.nav-number
+  font-size: 14px
+  font-weight: 700
+.nav-btn
+  width: 135px
+  height: 35px
+  background-color: #F5E8F1
+  border: 2px solid #7148CA
+  border-radius: 30px
+  font-size: 12px
+  font-weight: 700
 
 .header
   background: rgba(188, 102, 160, 0.15)
-  .header__container
-    .header__row
-      padding-right: 0
-      padding-bottom: 120px !important
-      .header__main
-        max-width: 560px
-        min-width: 300px
-      h1
-        padding: 40px 0
-        margin: 0
-      p
-        padding: 0 0 60px 0
-        margin: 0
-      .header__form
-        width: 520px
+.header__container
+.header__row
+  padding-right: 0
+  padding-bottom: 120px !important
+  h1
+    padding: 40px 0
+    margin: 0
+  p
+    padding: 0 0 60px 0
+    margin: 0
+.header__main
+  max-width: 560px
+  min-width: 300px
+.header__form
+  width: 520px
 
-        .header__formFlex
-          height: 55px
-          border: 2px solid #7879F1
-          border-radius: 25px
-          input
-            width: 60%
-            border-radius: 23px 0 0 23px
-            border: 0
-          button
-            width: 40%
-            border-radius: 0 22px 22px 0
-            background: #7879F1
-            border: 0
-            p
-              position: relative
-              bottom: 4px
-              color: white
-              font-weight: 600
-              font-size: 16px
-              line-height: 55px
-      .header__other
-        width: 560px
-        .card
-          width: 320px
-          border-radius: 25px
-          border: 0
-          box-shadow: -1.57556px 4.20149px 15px rgba(0, 0, 0, 0.15)
-        .card-body
-          padding: 20px 40px
-          width: 320px
-          .card-buy
-            font-weight: 400
-            font-size: 0.8em
-            opacity: 40%
-          .header__card-img-item
-            img
-              width: 240px
-          .header__card-img-star
-            position: relative
-            bottom: 30px
-          .header__card-text
-            position: relative
-            bottom: 30px
-            font-weight: 400
-            font-size: 1em
+.header__formFlex
+  height: 55px
+  border: 2px solid #7879F1
+  border-radius: 25px
+  input
+    width: 60%
+    border-radius: 23px 0 0 23px
+    border: 0
+  button
+    width: 40%
+    border-radius: 0 22px 22px 0
+    background: #7879F1
+    border: 0
+    p
+      position: relative
+      bottom: 4px
+      color: white
+      font-weight: 600
+      font-size: 16px
+      line-height: 55px
+.header__other
+  width: 560px
+.card
+  width: 320px
+  border-radius: 25px
+  border: 0
+  box-shadow: -1.57556px 4.20149px 15px rgba(0, 0, 0, 0.15)
+.card-body
+  padding: 20px 40px
+  width: 320px
+.card-buy
+  font-weight: 400
+  font-size: 0.8em
+  opacity: 40%
+.header__card-img-item
+  img
+    width: 240px
+.header__card-img-star
+  position: relative
+  bottom: 30px
+.header__card-text
+  position: relative
+  bottom: 30px
+  font-weight: 400
+  font-size: 1em
 
 .clients
-  .clients__blocks
-    padding: 40px 0
-    .clients__blockActive
-      background: linear-gradient(90.15deg, #7AC8FF 0.11%, #547BED 50.02%, #FF719D 99.85%)
-    .clients__block
-      min-height: 190px
-      min-width: 200px
-      max-width: 350px !important
-      display: flex
-      justify-content: center
-      align-items: center
-      border-radius: 30px
-      box-shadow: -0.471052px 0.471052px 7px rgba(102, 76, 117, 0.3)
-      .clients__blockInfo
-        width: 97%
-        min-height: 180px
-        display: flex
-        flex-direction: column
-        justify-content: center !important
-        align-items: center
-        border-radius: 26px
-        background-color: #fff
-        p
-          font-weight: 500
-          font-size: 18px 
+.clients__blocks
+  padding: 40px 0
+.clients__blockActive
+  background: linear-gradient(90.15deg, #7AC8FF 0.11%, #547BED 50.02%, #FF719D 99.85%)
+.clients__block
+  min-height: 190px
+  min-width: 200px
+  max-width: 350px !important
+  display: flex
+  justify-content: center
+  align-items: center
+  border-radius: 30px
+  box-shadow: -0.471052px 0.471052px 7px rgba(102, 76, 117, 0.3)
+.clients__blockInfo
+  width: 97%
+  min-height: 180px
+  display: flex
+  flex-direction: column
+  justify-content: center !important
+  align-items: center
+  border-radius: 26px
+  background-color: #fff
+  p
+    font-weight: 500
+    font-size: 18px
+
+.services
+  background: #FBFAFE
+.services__blocks
+  max-width: 1400px
+  gap: 70px
+.services__block
+  width: 300px
+  min-height: 150px
+  box-shadow: -0.471052px 0.471052px 7px rgba(102, 76, 117, 0.3)
+  border: 2px solid #6E679C
+  border-radius: 30px
+  background-color: #17022D
+  p
+    text-align: start
+    margin-right: 0 !important
+    
+    max-width: 160px
+    color: white
+    margin: 20px
+    font-size: 18px
+    font-weight: 600
+.services__blockActive
+  background-color: white
+  p
+    color: black
+
+
+@media screen and (min-width:1800px)
+  .services__blocks
 
 @media screen and (max-width:768px)
   p
@@ -191,61 +226,62 @@ p
   h6
     font-size: 11px
   .navbar
-    .navbar-brand
-      img
-        width: 63px
-        height: 38px
-
+  .navbar-brand
+    img
+      width: 63px
+      height: 38px
 @media screen and (max-width:1200px)
+  .services__blocks
+    gap: 10px
   .header
-    .header__row
-    .header__other
-      width: 100% !important
+  .header__row
+  .header__other
+    width: 100%
 @media screen and (max-width:700px)
   .content
     display: none
   .slider
-    height: 350px !important
-    width: 350px !important
+    height: 350px
+    width: 350px
   .slick-list
-    padding: 0 30% 0 2% !important
-    .slick-track
-      overflow: hidden
-      height: 400px !important
-      gap: 20px !important
-      .slick-slide
-        position: relative
-        width: 240px !important
-        height: 220px !important
+    padding: 0 30% 0 2%
+  .slick-track
+    overflow: hidden
+    height: 400px
+    gap: 20px
+  .slick-slide
+    position: relative
+    width: 240px
+    height: 220px
   .card
     font-size: 11px
-    width: 200px !important
+    width: 200px
   .card-body
-    width: 240px !important
-    height: 220px !important
+    width: 240px
+    height: 220px
     text-align: center
-    .card-buy
-      text-align: start
-    .header__card-img-item
-      img
-        width: 100px !important
-    .header__card-img-star
-      top: 0
-    .header__card-text
-      top: 0
-      text-align: start
+  .card-buy
+    text-align: start
+  .header__card-img-item
+    img
+      width: 100px
+  .header__card-img-star
+    top: 0
+  .header__card-text
+    top: 0
+    text-align: start
   .header__form
-    width: 100% !important
+    width: 100%
 
 @media screen and (max-width:450px)
   .row
     padding: 0
   .header
-    .header__formFlex
-      .form-control
-        font-size: 13px !important
-      .header__btn
-        p
-          font-size: 10px !important
-    .form-check-label
-      font-size: 10px !important
+  .header__formFlex
+  .form-control
+    font-size: 13px
+  .header__btn
+    p
+      font-size: 10px
+  .form-check-label
+    font-size: 10px
