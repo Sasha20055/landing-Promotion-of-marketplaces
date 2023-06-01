@@ -234,8 +234,36 @@ p
   p
     color: black
 
-@media screen and (min-width:1800px)
-  .services__blocks
+.partner
+.partner__row
+  padding-top: 150px
+  .col-12
+    max-width: 1400px 
+    min-height: 600px
+    border: 3px solid #DBCAE7
+    border-radius: 36px
+    position: relative
+.partner__header
+  margin-top: 30px
+  margin-bottom: 80px
+  gap: 10px
+  justify-self: start
+  h2
+    color: #F1588A
+.partner__imgCart
+  position: absolute
+  top: -50px
+  right: -30px
+.partner__logo
+  position: absolute
+  bottom: -50px
+  width: 230px
+  background-color: #fff
+.partner__blocks
+  margin-bottom: 50px
+  max-width: 900px
+  flex-wrap: wrap
+  gap: 90px
 
 @media screen and (max-width:768px)
   p
@@ -258,7 +286,13 @@ p
   .header__row
   .header__other
     width: 100%
+@media screen and (max-width:1060px)
+  .partner__header
+    h2
+      display: none
 @media screen and (max-width:700px)
+  .partner__blocks
+    gap: 30px
   .content
     display: none
   .slider
@@ -295,6 +329,10 @@ p
     width: 100%
 
 @media screen and (max-width:450px)
+  .partner
+    margin: 80px 0
+  .partner__imgCart
+    right: 10px
   .services__bgcImg
     display: none
   .row
