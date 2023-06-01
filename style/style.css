@@ -4,6 +4,7 @@
 
 .container {
   max-width: 2000px;
+  overlow: hidden;
 }
 
 .center {
@@ -302,7 +303,32 @@ p {
   background: #FBFAFE;
 }
 
+.services__container {
+  overflow: hidden;
+}
+
+.services__row .col-12 {
+  min-height: 700px;
+  position: relative;
+}
+
+.services__bgcImg {
+  z-index: 1;
+  position: absolute;
+}
+
+.services__bgcImg1 {
+  left: -60px;
+  top: 0;
+}
+
+.services__bgcImg2 {
+  right: -220px;
+  bottom: -20px;
+}
+
 .services__blocks {
+  z-index: 2;
   max-width: 1400px;
   gap: 70px;
 }
@@ -349,6 +375,12 @@ p {
 }
 
 @media screen and (max-width: 1200px) {
+  .services__bgcImg1 {
+    left: -200px;
+  }
+  .services__bgcImg2 {
+    bottom: -100px;
+  }
   .services__blocks {
     gap: 10px;
   }
@@ -406,6 +438,9 @@ p {
 }
 
 @media screen and (max-width: 450px) {
+  .services__bgcImg {
+    display: none;
+  }
   .row {
     padding: 0;
   }
