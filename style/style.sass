@@ -7,9 +7,9 @@
   overlow: hidden
 
 .center
-  display: flex !important
-  justify-content: center !important
-  align-items: center !important
+  display: flex
+  justify-content: center
+  align-items: center
 
 h1
   font-weight: 800
@@ -19,6 +19,7 @@ h1
   background-image: linear-gradient(270deg, #C5436B 4.87%, #AA24AC 47%, #0689FF 100%)
   -webkit-background-clip: text
   -webkit-text-fill-color: transparent
+  text-transform: uppercase
 
 h2
   font-weight: 800
@@ -26,6 +27,10 @@ h2
   line-height: 47px
   padding: 40px 0
   color: #313131
+  text-transform: uppercase
+
+h3
+  text-transform: uppercase
 
 p
   font-weight: 400
@@ -238,7 +243,7 @@ p
 .partner__row
   padding-top: 150px
   .col-12
-    max-width: 1400px 
+    max-width: 1400px
     min-height: 600px
     border: 3px solid #DBCAE7
     border-radius: 36px
@@ -250,6 +255,7 @@ p
   justify-self: start
   h2
     color: #F1588A
+    text-transform: capitalize
 .partner__imgCart
   position: absolute
   top: -50px
@@ -265,6 +271,74 @@ p
   flex-wrap: wrap
   gap: 90px
 
+.work
+  position: relative
+.work__bgc
+  width: 100%
+  height: 100%
+  position: absolute
+  background: radial-gradient(44.6% 52.87% at 58.04% 52.87%, rgba(136, 136, 136, 0.3) 0%, rgba(234, 234, 234, 0.3) 50%, rgba(241, 88, 138, 0.12) 100%)
+  filter: blur(150px)
+.work__container
+  position: relative
+.work__row
+  .col-12
+    max-width: 1400px
+.work__blocksMain
+  position: relative
+  width: 100%
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+.work__blocks
+  display: flex
+  width: 80%
+  gap: 150px
+.work__blocks1
+  align-self: end
+  justify-content: end
+  border-radius: 0 140px 140px 0
+  border-top: 2px solid #F1588A
+  border-right: 2px solid #F1588A
+  border-bottom: 2px solid #F1588A
+  .work__block
+    right: 130px
+.work__blocks2
+  position: relative
+  bottom: 1.5px
+  align-self: start
+  justify-content: start
+  border-radius: 140px 0 0 140px
+  border-top: 2px solid #F1588A
+  border-left: 2px solid #F1588A
+  border-bottom: 2px solid #F1588A
+  .work__block
+    left: 100px
+
+.work__block
+  position: relative
+  flex-direction: column
+  justify-content: start
+  bottom: 25px
+  height: 220px
+  margin-bottom: 30px
+  p
+    font-size: 14px
+  h3
+    font-size: 18px
+    font-weight: 700
+  span
+    margin-bottom: 15px
+    font-weight: 700
+    font-size: 30px
+    display: block
+    color: white
+    width: 50px
+    height: 50px
+    border-radius: 50px
+    background-color: #F1588A
+    text-align: center
+
 @media screen and (max-width:768px)
   p
     font-size: 15px
@@ -276,6 +350,9 @@ p
       width: 63px
       height: 38px
 @media screen and (max-width:1200px)
+  .work__blocks1
+    .work__block
+      right: 90px
   .services__bgcImg1
     left: -200px
   .services__bgcImg2
@@ -290,6 +367,34 @@ p
   .partner__header
     h2
       display: none
+  .work__block
+    span
+      margin-bottom: 0
+@media screen and (max-width:1000px)
+  .work__blocks
+    width: 100%
+    flex-wrap: wrap
+    align-self: start
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    gap: 0
+    border-left: 0
+    border-top: 0
+    border-right: 0
+    border-bottom: 0
+    border-radius: 0
+    .work__block
+      position: relative
+      margin: 0
+      max-width: 50%
+      bottom: 0
+      right: 0
+      left: 0
+      span
+        position: absolute
+        top: 50px
+        left: -50%
 @media screen and (max-width:700px)
   .partner__blocks
     gap: 30px
