@@ -662,8 +662,8 @@ p {
   }
   .work__blocks .work__block span {
     position: absolute;
-    top: 50px;
-    left: -50%;
+    top: 20px;
+    left: -45%;
   }
 }
 
@@ -750,6 +750,9 @@ p {
   .header__form {
     width: 100%;
   }
+  .services__blocks {
+    gap: 40px;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -770,11 +773,26 @@ p {
   h6 {
     font-size: 9px !important;
   }
+  .competency__header {
+    margin-top: 80px;
+  }
   .interection__header {
-    margin: 0;
+    margin: 50px 80px 80px 40px;
+  }
+  .interection__header h2 {
+    padding: 0;
+  }
+  .interection__header span {
+    display: none;
+  }
+  .interection__blockCond li {
+    padding: 5px;
   }
   .partner {
-    margin: 80px 0;
+    margin: 100px 0;
+  }
+  .work__header {
+    margin-top: 50px;
   }
   .partner__imgCart {
     right: 10px;
@@ -782,8 +800,11 @@ p {
   .services__bgcImg {
     display: none;
   }
+  .service__header {
+    margin-bottom: 50px !important;
+  }
   .row {
-    padding: 0;
+    padding: 60px 0;
   }
   .form-control {
     font-size: 13px;
