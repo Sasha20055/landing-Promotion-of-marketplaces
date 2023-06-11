@@ -1,6 +1,12 @@
 
 .row
   padding: 40px
+  display: flex
+  justify-content: center
+  align-items: center
+
+.col-12
+  max-width: 1400px
 
 .container
   max-width: 2000px
@@ -55,43 +61,41 @@ p
   align-items: center
   height: 450px
   width: 550px
-.slick-list
-  overflow: hidden
-  padding: 0 35% 0 2%
-.slick-track
-  transition-duration: 0.5s
-  display: flex
-  gap: 50px
-  overflow: hidden
-  height: 550px
-  align-items: center
-.slick-slide
-  position: relative
-  width: 320px
-  height: 370px
-  border-radius: 25px
-  transition-duration: 0.5s
-
-.slick-active
-  transform: translate(0, -15px)
-  transition-duration: 1.5s
-
+  .slick-list
+    overflow: hidden
+    padding: 0 35% 0 2%
+  .slick-track
+    transition-duration: 0.5s
+    display: flex
+    gap: 50px
+    overflow: hidden
+    height: 550px
+    align-items: center
+  .slick-slide
+    position: relative
+    width: 320px
+    height: 370px
+    border-radius: 25px
+    transition-duration: 0.5s
+  .slick-active
+    transform: translate(0, -15px)
+    transition-duration: 1.5s
 .content
   display: flex
   gap: 50px
-.slick-next
-  background: url(../img/otherIcons/Arrow.svg) 0 0 no-repeat
-  padding: 5px 10px
-  font-size: 0px
-  border: 0
-  position: relative
-.slick-prev
-  background: url(../img/otherIcons/Arrow.svg) 0 0 no-repeat
-  transform: rotate(180deg)
-  padding: 5px 10px
-  font-size: 0px
-  border: 0
-  position: relative
+  .slick-next
+    background: url(../img/otherIcons/Arrow.svg) 0 0 no-repeat
+    padding: 5px 10px
+    font-size: 0px
+    border: 0
+    position: relative
+  .slick-prev
+    background: url(../img/otherIcons/Arrow.svg) 0 0 no-repeat
+    transform: rotate(180deg)
+    padding: 5px 10px
+    font-size: 0px
+    border: 0
+    position: relative
 
 .navbar
   padding: 0 !important
@@ -261,7 +265,6 @@ p
 .partner__row
   padding-top: 150px
   .col-12
-    max-width: 1400px
     min-height: 600px
     border: 3px solid #DBCAE7
     border-radius: 36px
@@ -299,9 +302,6 @@ p
   filter: blur(150px)
 .work__container
   position: relative
-.work__row
-  .col-12
-    max-width: 1400px
 .work__header
   margin-top: 100px
   margin-bottom: 80px
@@ -352,6 +352,10 @@ p
 .competency
   .container
     flex-direction: column
+.competency__row2
+  position: relative
+  overflow: hidden
+
 .interection__header
   position: relative
   margin: 80px
@@ -368,7 +372,12 @@ p
     position: absolute
     left: -70px
     top: 15px
+.interection__row
+  width: 100%
+  .col-12
+    flex-direction: column !important
 .interection__blocks
+  z-index: 1
   max-width: 1400px
   gap: 60px
 .interection__block
@@ -382,8 +391,149 @@ p
     margin-bottom: 13px
   li
     list-style: url('../img/otherIcons/checks.svg')
+.interection__bgc
+  position: absolute
+  z-index: 2
+.interection__bgc1
+  top: 25%
+  left: -40px
+.interection__bgc2
+  right: -150px
+  top: 50%
+.confidence__row
+  background: linear-gradient(90.15deg, #7AC8FF 0.11%, #547BED 50.02%, #FF719D 99.85%)
+  padding: 4px 0 4px 0
+  margin-bottom: 100px
+  .col-12
+    padding: 80px 130px
+    background-color: #fff
+    justify-content: space-between
+.confidence__header
+  width: 45%
+  h2
+    padding: 0
+    font-weight: 700
+  .confidence__headerNumber
+    font-size: 80px !important
+    font-weight: 700 !important
+    line-height: 100% !important
+    background-image: linear-gradient(180deg, #F35687 0%, #2960E9 53.12%, #4DB5FF 100%)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+
+.confidence__slider
+  overflow: hidden
+  min-width: 400px
+  flex-direction: column
+  gap: 50px
+  .slick-list
+    overflow: hidden
+    height: 220px !important
+    padding: 0 !important
+  .slick-arrow
+    z-index: 1
+    font-size: 0
+    border: 0
+    width: 45px
+    height: 20px
+  .slick-next
+    background: url(../img/otherIcons/Arrow2.svg) 0 0 no-repeat
+    transform: rotate(180deg)
+    position: relative
+    bottom: 20px
+  .slick-prev
+    background: url(../img/otherIcons/Arrow2.svg) 0 0 no-repeat
+.confidence__block
+  height: 80px
+  width: 100%
+  display: flex
+  gap: 50px
+  img
+    max-width: 130px
+    max-height: 30px
+
+.footer
+  background-color: #171717
+  color: #B6B6B6
+  a
+    color: #B6B6B6
+    text-decoration: none
+.footer__container
+  flex-direction: column
+.footer__row
+  width: 100%
+  .col-12
+    align-items: start
+    justify-content: space-between
+    gap: 50px
+    h2
+      font-weight: 500
+      font-size: 25px
+      color: #DBDBDB
+.footer__rowMain
+  padding-top: 100px
+  padding-bottom: 0
+.footer__menuList
+  display: flex
+  gap: 50px
+  ul
+    display: flex
+    flex-direction: column
+  li
+    list-style: none
+.footer__menuList2
+  ul
+    gap: 35px
+.footer__menuList1
+  ul
+    gap: 15px
+    padding: 0
+    margin: 0
+.footer__logo
+  text-align: center
+  img
+    width: 220px
+    opacity: 40%
+.footer__rowContacts
+  padding-bottom: 100px
+  .col-12
+    display: flex
+    align-items: center
+    justify-content: space-between
+.footer__contacts
+  display: flex
+  gap: 40px
+  div
+    display: flex
+    gap: 10px
+    p
+      color: #B6B6B6
+      margin: 0
+.footer__socialMedia
+  display: flex
+  gap: 25px
 
 @media screen and (max-width:1200px)
+  .footer__logo
+    margin: auto
+    img
+      width: 200px
+    h2
+      display: none
+  .confidence__row
+    .col-12
+      flex-direction: column
+      gap: 30px
+      text-align: center
+      padding: 120px 0
+      height: 100%
+      h2
+        font-weight: 500
+        font-size: 30px
+  .confidence__header
+    width: 70%
+  .confidence__slider
+    width: 100%
   .work__blocks1
     .work__block
       right: 90px
@@ -394,7 +544,6 @@ p
   .services__blocks
     gap: 10px
   .header
-  .header__row
   .header__other
     width: 100%
 @media screen and (max-width:1060px)
@@ -405,10 +554,8 @@ p
     span
       margin-bottom: 0
 @media screen and (max-width:1000px)
-
   .interection__block
     width: 80%
-
   .work__blocks
     width: 100%
     flex-wrap: wrap
@@ -434,6 +581,25 @@ p
         top: 20px
         left: -45%
 @media screen and (max-width:768px)
+  .footer__rowMain
+    .col-12
+      flex-direction: column
+  .footer__logo
+    h2
+      display: block
+  .footer__menuList2
+    margin: auto
+    text-align: center
+    ul
+      padding: 0
+      margin: 0
+  .footer__rowContacts
+    .col-12
+      flex-direction: column
+  .footer__menuList1
+    display: none
+  .interection__bgc
+    display: none
   h1
     font-weight: 700
     font-size: 35px
@@ -467,16 +633,16 @@ p
   .slider
     height: 350px
     width: 350px
-  .slick-list
-    padding: 0 30% 0 2%
-  .slick-track
-    overflow: hidden
-    height: 400px
-    gap: 20px
-  .slick-slide
-    position: relative
-    width: 240px
-    height: 220px
+    .slick-list
+      padding: 0 30% 0 2%
+    .slick-track
+      overflow: hidden
+      height: 400px
+      gap: 20px
+    .slick-slide
+      position: relative
+      width: 240px
+      height: 220px
   .card
     font-size: 11px
     width: 200px
@@ -512,21 +678,22 @@ p
     font-size: 13px !important
   h6
     font-size: 9px !important
-  .competency__header
-    margin-top: 80px
   .interection__header
+    margin: 0 0 50px 0
     h2
       padding: 0
-    margin: 50px 80px 80px 40px
+      margin: 0 0 20px 0
     span
       display: none
   .interection__blockCond
     li
       padding: 5px
+  .interection__block
+    width: 100%
   .partner
     margin: 100px 0
   .work__header
-    margin-top: 50px
+    margin-top: 0
   .partner__imgCart
     right: 10px
   .services__bgcImg
@@ -542,3 +709,9 @@ p
       font-size: 10px
   .form-check-label
     font-size: 10px
+  .confidence__row
+    padding: 4px 0
+    .col-12
+      padding: 50px 0
+  .confidence__slider
+    min-width: 300px
