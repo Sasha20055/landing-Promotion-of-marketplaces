@@ -21,7 +21,7 @@
 
 
   <nav class="navbar navbar-expand-md navbar-light bg-light">
-    <div class="container-fluid">
+    <div class="container">
       <a class="navbar-brand" href="#"><img src="img/mainIconLarge.svg" alt=""></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,9 +58,25 @@
     </div>
   </nav>
 
-
+  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            
+          </button>
+        </div>
+        <div class="modal-body">
+          <h2>мы получили вашу заявку!</h2>
+          <img src="./img//otherIcons//stars.svg" alt="stars">
+          <p>Мы скоро вам перезвоним. А пока посмотрите нашу презентацию – она у васна почте</p>
+        </div>
+      </div>
+    </div>
+  </div>
   <header class="header d-flex">
-    <div class="header__container container">
+    <div class="header__container container center">
       <div class="header__row row d-flex justify-content-xl-between justify-content-center">
         <div class="col-md-6 header__main d-xl-block d-none">
           <h1>ВАШИ ПРОДАЖИ В НАДЕЖНЫМ РУКАХ!</h1>
@@ -68,7 +84,7 @@
           <form action="#" class="header__form">
             <div class="d-flex header__formFlex">
               <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ваш email">
-              <button class="header__btn ">
+              <button type="button" class="header__btn" data-bs-toggle="modal" data-bs-target="#exampleModalLong">
                 <p>Оставить заявку</p>
               </button>
             </div>
@@ -171,7 +187,7 @@
           <form action="#" class="header__form d-xl-none">
             <div class="d-flex header__formFlex">
               <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ваш email">
-              <button class="header__btn ">
+              <button type="button" class="header__btn" data-bs-toggle="modal" data-bs-target="#exampleModalLong">
                 <p>Оставить заявку</p>
               </button>
             </div>
@@ -320,36 +336,48 @@
             <div class="work__blocks work__blocks1 text-center">
               <div class="work__block center">
                 <span class="work__blockNumber">1</span>
-                <h3>Бесплатный аудит и консультация</h3>
-                <p>Проводим обязательный колл, определяем задачи, сразу предлагаем оптимальноедля вас решение</p>
+                <div class="work__blockText">
+                  <h3>Бесплатный аудит и консультация</h3>
+                  <p>Проводим обязательный колл, определяем задачи, сразу предлагаем оптимальноедля вас решение</p>
+                </div>
               </div>
               <div class="work__block center">
                 <span class="work__blockNumber">2</span>
-                <h3>подготовка КП</h3>
-                <p>Определяем идеальноедля вас решение, осмечиваем, определяем стратегию продаж</p>
+                <div class="work__blockText">
+                  <h3>подготовка КП</h3>
+                  <p>Определяем идеальноедля вас решение, осмечиваем, определяем стратегию продаж</p>
+                </div>
               </div>
               <div class="work__block center">
                 <span class="work__blockNumber">3</span>
-                <h3>Заключение договора</h3>
-                <p>Работаем только официально,все договоренности закрепляем в договоре</p>
+                <div class="work__blockText">
+                  <h3>Заключение договора</h3>
+                  <p>Работаем только официально,все договоренности закрепляем в договоре</p>
+                </div>
               </div>
             </div>
             <div class="work__blocks work__blocks2 text-center">
               <div class="work__block center">
                 <span class="work__blockNumber">4</span>
-                <h3>проведение аналитики</h3>
-                <p>Углубляемся в ваш рынок, ищем ваши сильные стороны, осознаем слабые, и только потом приступаем к
-                  работе</p>
+                <div class="work__blockText">
+                  <h3>проведение аналитики</h3>
+                  <p>Углубляемся в ваш рынок, ищем ваши сильные стороны, осознаем слабые, и только потом приступаем к
+                    работе</p>
+                </div>
               </div>
               <div class="work__block center">
                 <span class="work__blockNumber">5</span>
-                <h3>Старт продаж и получение прибыли</h3>
-                <p>Проводим необходимый комплекс маркетинговых активностей, единственная цель которых – прибыль</p>
+                <div class="work__blockText">
+                  <h3>Старт продаж и получение прибыли</h3>
+                  <p>Проводим необходимый комплекс маркетинговых активностей, единственная цель которых – прибыль</p>
+                </div>
               </div>
               <div class="work__block center">
                 <span class="work__blockNumber">6</span>
-                <h3>отчетность</h3>
-                <p>Хвастаемся результатами в наглядном отчете на ежемесячной основе</p>
+                <div class="work__blockText">
+                  <h3>отчетность</h3>
+                  <p>Хвастаемся результатами в наглядном отчете на ежемесячной основе</p>
+                </div>
               </div>
             </div>
           </div>

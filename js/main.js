@@ -15,3 +15,18 @@ $(function () {
     centerMode: true
   })
 })
+
+var popUp = document.getElementById('header__popUp')
+var container = document.getElementsByClassName('container')
+
+function openPopUp() {
+  popUp.classList.add("open__popUp")
+  for(let i = 0; i < container.length; i++ ){
+    container[i].classList.add('containerBlur')}
+}
+
+function closePopUp() {
+  popUp.classList.remove("open__popUp")
+  for(let i = 0; i < container.length; i++ ){
+    container[i].classList.remove('containerBlur')}
+}
