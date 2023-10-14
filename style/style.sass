@@ -122,9 +122,20 @@ p
   border-radius: 30px
   font-size: 12px
   font-weight: 700
+  transition-duration: 0.5s
+  &:hover
+    background-color: #7879F1
+    color: white
+    border: 0
 
 .header
   background: rgba(188, 102, 160, 0.15)
+.header__btn
+  transition-duration: 0.5s
+  p
+    font-size: 10px
+  &:hover
+    background: #7148CA
 .header__container
 .header__row
   padding: 80px 0
@@ -132,11 +143,19 @@ p
     padding-bottom: 20px
     margin: 0
   p
-    padding: 0 0 80px 0
+    padding: 0
     margin: 0
 .modal-header
   align-self: end
   border: 0
+.modal__socialMedia
+  display: flex
+  gap: 15px
+  justify-content: center
+  margin-bottom: 25px
+  img
+    width: 25px !important
+
 .modal-content
   overflow: hidden
   border-radius: 30px
@@ -156,6 +175,9 @@ p
   transition-duration: 0.4s
   &:hover
     transform: scale(1.1)
+.contacts-modal-body
+  gap: 10px !important
+  text-align: center
 .modal-body
   text-align: center
   display: flex
@@ -164,6 +186,10 @@ p
   justify-content: end
   width: 50%
   gap: 40px
+  .tel
+    display: flex
+    img
+      width: 25px !important
   img
     width: 338px
   p
@@ -180,6 +206,7 @@ p
   height: 55px
   border: 2px solid #7879F1
   border-radius: 25px
+  margin: 20px 0
   input
     width: 65%
     border-radius: 23px 0 0 23px
@@ -622,6 +649,10 @@ p
     gap: 15px
     span
       border-radius: 0
+@media screen and (max-width:790px)
+  .navbar-brand
+    img
+      width: 83px
 @media screen and (max-width:768px)
   .modal-body
     img
@@ -667,9 +698,6 @@ p
     font-size: 11px
   .clients__row
     padding: 0
-  .navbar-brand
-    img
-      width: 83px
   .services__block
     min-height: 120px
   .services__row
@@ -764,9 +792,6 @@ p
     padding: 60px 0
   .form-control
     font-size: 13px
-  .header__btn
-    p
-      font-size: 10px
   .form-check-label
     font-size: 10px
   .confidence__row

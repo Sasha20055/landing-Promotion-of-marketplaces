@@ -30,16 +30,16 @@
       <div class="collapse navbar-collapse d-flex-md justify-content-between" id="navbarSupportedContent">
         <ul class="navbar-nav flex-wrap mr-auto mb-4 mb-md-0 align-items-center p-lg-3">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Услуги</a>
+            <a class="nav-link active" aria-current="page" href="#services">Услуги</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Стоимость</a>
+            <a class="nav-link" href="#competency">Взаимодействие</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Клиенты</a>
+            <a class="nav-link" href="#clients">Клиенты</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Контакты</a>
+            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModalLongContacts">Контакты</a>
           </li>
         </ul>
         <ul class="navbar-nav nav-phone mr-auto mb-5 mb-md-0 d-flex align-items-center ">
@@ -51,7 +51,7 @@
             <p class="m-3 nav-number">8 (999) 999-99-99</р>
           </li>
           <li class="nav-item">
-            <button class="nav-btn">Перезвоните мне</button>
+            <button class="nav-btn" data-bs-toggle="modal" data-bs-target="#exampleModalLong">Перезвоните мне</button>
           </li>
         </ul>
       </div>
@@ -64,13 +64,45 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-            
+
           </button>
         </div>
         <div class="modal-body">
           <h2>мы получили вашу заявку!</h2>
           <img src="./img//otherIcons//stars.svg" alt="stars">
           <p>Мы скоро вам перезвоним. А пока посмотрите нашу презентацию – она у васна почте</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModalLongContacts" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content contacts-modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+
+          </button>
+        </div>
+        <div class="modal-body contacts-modal-body">
+          <h3>Наши контакты</h3>
+          <p class="m-2">8 (999) 999-99-99</р>
+          <p class="m-2">+7 000 000 00 00</p>
+          <p class="m-2">info@marketgo.agency</p>
+          <div class="modal__socialMedia">
+            <a href="#" class="telegram">
+              <img src="./img//socialMedia//telegram.svg" alt="telegarm">
+            </a>
+            <a href="#" class="whatsapp">
+              <img src="./img//socialMedia//whatsapp.svg" alt="whatsapp">
+            </a>
+            <a href="#" class="vk">
+              <img src="./img//socialMedia//vk.svg" alt="vk">
+            </a>
+            <a href="#" class="insta">
+              <img src="./img//socialMedia//insta.svg" alt="insta">
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -206,7 +238,7 @@
     </div>
   </header>
 
-  <section class="clients">
+  <section class="clients" id="clients">
     <div class="container clients__container">
       <div class="row clients__row">
         <div class="col-12 flex-column center">
@@ -238,7 +270,7 @@
     </div>
   </section>
 
-  <section class="services">
+  <section class="services" id="services">
     <div class="container services__container">
       <row class="row services__row text-center">
         <div class="col-12 flex-column center">
@@ -386,7 +418,7 @@
     </div>
   </section>
 
-  <section class="competency">
+  <section class="competency" id="competency">
     <div class="container competency__container center">
       <div class="row competency__row competency__row1 center">
         <div class="competency__header center">

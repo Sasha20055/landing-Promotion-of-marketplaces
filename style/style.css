@@ -187,10 +187,31 @@ p {
   border-radius: 30px;
   font-size: 12px;
   font-weight: 700;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.nav-btn:hover {
+  background-color: #7879F1;
+  color: white;
+  border: 0;
 }
 
 .header {
   background: rgba(188, 102, 160, 0.15);
+}
+
+.header__btn {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.header__btn p {
+  font-size: 10px;
+}
+
+.header__btn:hover {
+  background: #7148CA;
 }
 
 .header__row {
@@ -203,7 +224,7 @@ p {
 }
 
 .header__row p {
-  padding: 0 0 80px 0;
+  padding: 0;
   margin: 0;
 }
 
@@ -212,6 +233,21 @@ p {
       -ms-grid-row-align: end;
       align-self: end;
   border: 0;
+}
+
+.modal__socialMedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 25px;
+}
+
+.modal__socialMedia img {
+  width: 25px !important;
 }
 
 .modal-content {
@@ -248,6 +284,11 @@ p {
           transform: scale(1.1);
 }
 
+.contacts-modal-body {
+  gap: 10px !important;
+  text-align: center;
+}
+
 .modal-body {
   text-align: center;
   display: -webkit-box;
@@ -265,6 +306,16 @@ p {
           justify-content: end;
   width: 50%;
   gap: 40px;
+}
+
+.modal-body .tel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal-body .tel img {
+  width: 25px !important;
 }
 
 .modal-body img {
@@ -293,6 +344,7 @@ p {
   height: 55px;
   border: 2px solid #7879F1;
   border-radius: 25px;
+  margin: 20px 0;
 }
 
 .header__formFlex input {
@@ -1030,6 +1082,12 @@ p {
   }
 }
 
+@media screen and (max-width: 790px) {
+  .navbar-brand img {
+    width: 83px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .modal-body img {
     width: 200px;
@@ -1092,9 +1150,6 @@ p {
   }
   .clients__row {
     padding: 0;
-  }
-  .navbar-brand img {
-    width: 83px;
   }
   .services__block {
     min-height: 120px;
@@ -1227,9 +1282,6 @@ p {
   }
   .form-control {
     font-size: 13px;
-  }
-  .header__btn p {
-    font-size: 10px;
   }
   .form-check-label {
     font-size: 10px;
