@@ -1,4 +1,4 @@
-# [Сайт-лендинг по продвижению заказов](https://sasha20055.github.io/SchoolCours-Landing)
+# [Сайт-лендинг по продвижению заказов](https://sasha20055.github.io/landing-Promotion-of-marketplaces/)
 # Особенности сайта
 <ul>
   <li>Адаптивный дизайн ( flex )</li>
